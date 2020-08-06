@@ -1,5 +1,6 @@
 import os
-from setuptools import setup
+from setuptools  import setup
+from fontawesome import __version__
 
 README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
 
@@ -8,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django3x-fontawesome',
-    version='1.0',
+    version=__version__,
     packages=['fontawesome'],
     include_package_data=True,
     license='BSD License',
