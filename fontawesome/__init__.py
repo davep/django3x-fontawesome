@@ -1,3 +1,5 @@
+__version__ = "1.0.0"
+
 from django.conf import settings
 from django.utils.html import format_html
 
